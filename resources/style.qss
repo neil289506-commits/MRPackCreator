@@ -1,0 +1,196 @@
+/* MrpackMaker — 深色現代風格
+   配色走 Fluent 風格的暗色調，跟其他姊妹專案（MCServerManager / WorldGenModule）維持一致的視覺語彙。 */
+
+* {
+    outline: none;
+}
+
+QWidget {
+    background-color: #1e1f24;
+    color: #e6e6ea;
+    font-family: "Segoe UI", "Microsoft JhengHei UI", sans-serif;
+    font-size: 13px;
+}
+
+QWizard {
+    background-color: #1e1f24;
+}
+
+QWizard QLabel#qt_wizard_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+QLabel {
+    background: transparent;
+}
+
+QLabel#summaryLabel {
+    background-color: #26272e;
+    border: 1px solid #34353d;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* ---- 輸入元件 ---- */
+QLineEdit, QComboBox, QPlainTextEdit, QTextEdit {
+    background-color: #26272e;
+    border: 1px solid #34353d;
+    border-radius: 6px;
+    padding: 5px 8px;
+    selection-background-color: #4c8bf5;
+    selection-color: #ffffff;
+}
+
+QLineEdit:focus, QComboBox:focus, QPlainTextEdit:focus {
+    border: 1px solid #4c8bf5;
+}
+
+QLineEdit:read-only {
+    color: #9a9ba3;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #26272e;
+    border: 1px solid #34353d;
+    selection-background-color: #4c8bf5;
+    outline: none;
+}
+
+/* ---- 按鈕 ---- */
+QPushButton {
+    background-color: #2e2f37;
+    border: 1px solid #3a3b44;
+    border-radius: 6px;
+    padding: 6px 16px;
+}
+
+QPushButton:hover {
+    background-color: #383a44;
+    border: 1px solid #4c8bf5;
+}
+
+QPushButton:pressed {
+    background-color: #24252b;
+}
+
+QPushButton:disabled {
+    color: #6c6d75;
+    background-color: #23242a;
+}
+
+QPushButton#primaryButton {
+    background-color: #4c8bf5;
+    border: 1px solid #4c8bf5;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #689cf7;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: #3d74d6;
+}
+
+/* ---- 表格 / 樹狀清單 ---- */
+QTableWidget, QTreeWidget {
+    background-color: #26272e;
+    alternate-background-color: #2a2b32;
+    border: 1px solid #34353d;
+    border-radius: 6px;
+    gridline-color: #34353d;
+}
+
+QHeaderView::section {
+    background-color: #2e2f37;
+    color: #d5d6db;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid #3a3b44;
+}
+
+QTableWidget::item:selected, QTreeWidget::item:selected {
+    background-color: #3a5da8;
+    color: #ffffff;
+}
+
+QTreeWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+/* ---- 分頁 ---- */
+QTabWidget::pane {
+    border: 1px solid #34353d;
+    border-radius: 8px;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background: #26272e;
+    border: 1px solid #34353d;
+    padding: 6px 16px;
+    margin-right: 2px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #4c8bf5;
+    color: #ffffff;
+}
+
+/* ---- Console / log ---- */
+QPlainTextEdit#consoleOutput {
+    background-color: #14151a;
+    color: #8fe19a;
+    font-family: "Cascadia Mono", "Consolas", monospace;
+    border: 1px solid #2a2b32;
+    border-radius: 6px;
+}
+
+/* ---- 進度條 ---- */
+QProgressBar {
+    background-color: #26272e;
+    border: 1px solid #34353d;
+    border-radius: 6px;
+    height: 10px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #4c8bf5;
+    border-radius: 6px;
+}
+
+/* ---- Wizard 導覽按鈕 ---- */
+QWizard QPushButton {
+    min-width: 84px;
+}
+
+QScrollBar:vertical {
+    background: #1e1f24;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3a3b44;
+    border-radius: 5px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4c8bf5;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
